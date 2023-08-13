@@ -1,16 +1,24 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Contact.css';
 import config from './config'; // Importez le fichier de configuration
 
 emailjs.init(config.emailjsPublicKey);
 
-export const Contact = () => {
+const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
     const form = useRef();
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
 
+    const sendEmail = () => {
         emailjs
             .sendForm(
                 process.env.REACT_APP_SERVICEID,
@@ -26,28 +34,73 @@ export const Contact = () => {
             });
     };
 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            // Envoi des données au backend (port 4000)
+            const response = await fetch("http://localhost:4000/api/formData/save", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await response.json();
+            console.log(data); // Affiche la réponse du backend
+
+            // Envoi de l'email après avoir soumis les données au backend
+            sendEmail();
+        } catch (error) {
+            console.log(error);
+        }
+    };
+  
+
     return (
-        <div className="main__contact">
-            <form ref={form} onSubmit={sendEmail} className="form__contact">
+        <main className="main__contact">
+            <form ref={form} onSubmit={handleSubmit} className="form__contact">
                 <div>
-                    <label>Name</label>
-                    <input type="text" name="user_name" />
+                    <label htmlFor="name">Nom:</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                    />
                 </div>
                 <div>
-                    <label>Email</label>
-                    <input type="email" name="user_email" />
+                    <label htmlFor="email">Email:</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                    />
                 </div>
                 <div>
-                    <label>Message</label>
-                    <textarea name="message" />
+                    <label htmlFor="message">Message:</label>
+                    <textarea
+                        name="message"
+                        id="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                    ></textarea>
                 </div>
-                <input
-                    type="submit"
-                    value="Send"
-                    className="form__contact--btn"
-                />
+                <div className="recaptcha-container">
+                    <div
+                        className="g-recaptcha"
+                        data-sitekey="6Lesj6AnAAAAAJ7qzlyPpxcIOXWGJPB8EtrgAFWG"
+                    ></div>
+                </div>
+                <button className="form__contact--btn" type="submit">
+                    Envoyer
+                </button>
             </form>
-        </div>
+        </main>
     );
 };
 

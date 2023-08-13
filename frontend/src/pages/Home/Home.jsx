@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import logoGh from '../../assets/images/logo/github-logo.png';
 import './Home.css';
 
+
 const Home = () => {
   const settings = {
     dots: true,
@@ -22,9 +23,9 @@ const Home = () => {
         {ProjectsData.map((project, index) => (
           <div key={index} className="project-slide">
             <h2>{project.title}</h2>
-            <a href={project.githubPagesLink}>
+            <Link to={project.githubPagesLink}>
               <img className='project__img' src={project.imageSrc} alt={project.title} />
-            </a>
+            </Link>
             <div className='realisations__project--desc'>
               <Link to={project.videoLink}><button className="videobutton">Vidéos</button></Link>
               <a href={project.githubLink} target="_blank" rel="noopener noreferrer">

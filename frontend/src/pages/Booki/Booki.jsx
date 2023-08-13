@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../../components/Footer/Footer';
+
 
 
 const bookiSite = () => {
@@ -15,7 +15,6 @@ const bookiSite = () => {
         style={{ border: 'none' }}
       />
     </section>
-    <Footer />
     </main>
   );
 };
