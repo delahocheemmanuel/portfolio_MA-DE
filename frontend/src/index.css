@@ -1,13 +1,66 @@
-body {
+/* Réinitialisation de style (reset) */
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, figure, figcaption,
+dl, dd, ol, ul,
+pre,
+hr,
+fieldset, legend {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+  
 }
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* Couleurs */
+:root {
+  --primary-color: #f8fafb; /* Couleur primaire */
+  --secondary-color: black; /* Couleur secondaire */
+}
+
+
+/* Styles généraux */
+body {
+  font-family: "Arial Black", sans-serif; /* Utilisation de la police Arial Black */
+  line-height: 1.6;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color); /* Utilisation de la couleur primaire */
+}
+
+a:hover {
+  text-decoration: none;
+  color:red;
+  transform: scale(1.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Ajoutez vos styles spécifiques ci-dessous */

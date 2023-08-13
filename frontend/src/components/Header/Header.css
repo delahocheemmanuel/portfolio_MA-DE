@@ -1,34 +1,61 @@
-/* CSS pour le header */
-header {
-    background-color: #333; /* Couleur de fond */
-    padding: 10px; /* Espacement interne */
-    height: 100px; /* Hauteur du header */
+/* Header.css */
+@import "./../../index.css";
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo__made{
+  width: auto;
+  height: 75px;
+  margin: 0 auto;
+}
+.logo__made img{
+  width: auto;
+  height: 100px;
+}
+
+.header__NavLink {
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.header__NavLink a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+
+.header__NavLink img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Style pour le bouton de changement de mode sombre */
+.dark-mode-toggle {
+  cursor: pointer;
+  transition: transform 1.1s ease;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .header {
+     flex-direction: column;
+     flex-wrap: wrap;
   }
-  
-  .NavLink {
-    display: flex; /* Pour afficher les liens en ligne */
-    justify-content: space-between; /* Pour répartir les liens de manière égale */
-    max-width: 800px; /* Largeur maximale du header (ajustez selon vos besoins) */
-    margin: 0 auto; /* Centrer le header horizontalement */
-    font-size: 3rem;
+}
+@media screen and (max-width: 600px) {
+  .header {
+     
   }
-  
-  .NavLink img {
-    height: 40px; /* Hauteur de l'image */
-    margin-right: 10px; /* Espacement à droite de l'image */
-  }
-  
-  .NavLink a {
-    color: #fff; /* Couleur du texte des liens */
-    text-decoration: none; /* Supprimer le soulignement du texte des liens */
-    align-items: center; /* Alignement vertical des éléments au centre */
-    padding: 5px 10px; /* Espacement interne des liens */
-    border-radius: 5px; /* Bordures arrondies pour les liens */
-  }
-  
-  .NavLink a:hover {
-    background-color: #555; /* Couleur de fond au survol des liens */
-  }
-  
-  
-  
+}

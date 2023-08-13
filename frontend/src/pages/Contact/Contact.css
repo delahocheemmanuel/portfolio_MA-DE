@@ -1,21 +1,27 @@
 /* Contact.css */
+@import "./../../index.css";
 
 .main__contact {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  
 }
 
 .form__contact {
-  width: 80%;
-  max-width: 400px;
-  padding: 20px;
+  width: 70%;
+  padding: 30px;
+  margin-top: 50px;
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
-
+.form__contact form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .form__contact div {
   margin-bottom: 15px;
 }
@@ -23,15 +29,19 @@
 .form__contact label {
   display: block;
   margin-bottom: 5px;
+  padding: 8px;
   font-weight: bold;
 }
 
 .form__contact input,
 .form__contact textarea {
-  width: 100%;
+  width: 95%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+.form__contact textarea {
+  height: 150px;
 }
 
 .recaptcha-container {
@@ -39,6 +49,10 @@
 }
 
 .form__contact--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -50,7 +64,6 @@
 /* Responsive Styles */
 @media screen and (max-width: 600px) {
   .form__contact {
-      width: 90%;
-      max-width: none;
+      width: 70%;
   }
 }

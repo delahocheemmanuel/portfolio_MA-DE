@@ -4,7 +4,6 @@ import ProjectsData from '../../data/data';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Link } from 'react-router-dom';
-import logoGh from '../../assets/images/logo/github-logo.png';
 import './Home.css';
 
 
@@ -27,10 +26,7 @@ const Home = () => {
               <img className='project__img' src={project.imageSrc} alt={project.title} />
             </Link>
             <div className='realisations__project--desc'>
-              <Link to={project.videoLink}><button className="videobutton">Vidéos</button></Link>
-              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                <img className='github__logo' src={logoGh} alt="GitHub Logo" />
-              </a>
+              <Link to={project.githubLink} target="_blank" rel="noopener noreferrer">lien GitHub</Link>
               <ul>
                 {project.technologies.map((tech, techIndex) => (
                   <li key={techIndex}>{tech}</li>

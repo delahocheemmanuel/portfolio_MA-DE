@@ -11,6 +11,7 @@ const Contact = () => {
         email: '',
         message: '',
     });
+    const [message, setMessage] = useState(''); // État pour le message de réponse
     const form = useRef();
 
     const handleChange = (e) => {
@@ -28,9 +29,11 @@ const Contact = () => {
             )
             .then((result) => {
                 console.log(result.text);
+                alert('E-mail envoyé avec succès.'); // Définir le message en cas de succès
             })
             .catch((error) => {
                 console.log(error.text);
+                alert("L'envoi de l'e-mail a échoué."); // Définir le message en cas d'échec
             });
     };
 
@@ -50,19 +53,19 @@ const Contact = () => {
             const data = await response.json();
             console.log(data); // Affiche la réponse du backend
 
-            // Envoi de l'email après avoir soumis les données au backend
+            // Envoi de l'e-mail après avoir soumis les données au backend
             sendEmail();
         } catch (error) {
             console.log(error);
+            setMessage("L'envoi de l'e-mail a échoué."); // Définir le message en cas d'erreur
         }
     };
-  
 
     return (
         <main className="main__contact">
             <form ref={form} onSubmit={handleSubmit} className="form__contact">
                 <div>
-                    <label htmlFor="name">Nom:</label>
+                    <label htmlFor="name">Nom et prénom:</label>
                     <input
                         type="text"
                         name="name"
@@ -99,6 +102,7 @@ const Contact = () => {
                 <button className="form__contact--btn" type="submit">
                     Envoyer
                 </button>
+                <p>{message}</p> {/* Afficher le message de réponse */}
             </form>
         </main>
     );

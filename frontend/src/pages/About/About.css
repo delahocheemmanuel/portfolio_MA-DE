@@ -1,10 +1,11 @@
 /* About.css */
-
+@import "./../../index.css";
 .cv__container {
     font-family: 'Arial', sans-serif;
     max-width: 800px;
+    height: auto;
     margin: 0 auto;
-    padding: 40px;
+    padding-bottom: 100px;
     background-color: #f0f0f0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -48,11 +49,7 @@
     margin-bottom: 10px;
   }
   
-  .footer {
-    text-align: center;
-    margin-top: 30px;
-    color: #888;
-  }
+
   
   /* Media Query pour les petits écrans */
   @media screen and (max-width: 600px) {
