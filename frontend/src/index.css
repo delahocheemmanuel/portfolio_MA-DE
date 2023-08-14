@@ -36,8 +36,6 @@ textarea {
 
 
 
-/* Réinitialisation de style (reset) */
-/* ... (le reste du code reset) ... */
 
 /* Couleurs */
 :root {
@@ -51,6 +49,7 @@ textarea {
 body {
   font-family: "Arial Black", sans-serif; /* Utilisation de la police Arial Black */
   line-height: 1.6;
+  box-sizing: content-box;
   background-color: var(--background-light); /* Utilisation de la couleur de fond en mode clair */
   color: var(--secondary-color);
   transition: background-color 0.3s ease; /* Transition fluide du fond */
@@ -69,11 +68,16 @@ a {
 
 a:hover {
   text-decoration: none;
+  transform: scale(1.1);
   color: red;
 }
 
-/* ... (le reste du code) ... */
+a.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--primary-color);
+}
 
+/* ... (le reste du code) ... */
 
 .container {
   max-width: 1200px;

@@ -64,7 +64,7 @@ const Contact = () => {
     return (
         <main className="main__contact">
             <form ref={form} onSubmit={handleSubmit} className="form__contact">
-                <div>
+                <div className='main__contact--name'>
                     <label htmlFor="name">Nom et prénom:</label>
                     <input
                         type="text"

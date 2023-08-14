@@ -6,7 +6,7 @@
   flex-direction: column;
   max-width: 80%;
   height: 80%;
-  margin:0 auto;
+  margin:auto;
   padding-bottom: 150px;
 }
 
@@ -17,9 +17,11 @@
   justify-content: center;
   text-align: center;
   width: 100%;
-  background-color: #f5f5f5;
+  background-color:var--(primary-color);
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.githubPages{
+  border: none;
 }
 .project-slide h2{
   font-size: 2rem;
@@ -30,32 +32,37 @@
 
 .slick-prev:before, .slick-next:before {
   font-family: 'slick';
-  font-size: 40;
-  color: #d53737;
-  
+  font-size:50px;
+  color:var(--secondary-color);
 }
+
 
 .slick-slide img {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  
-
 }
 .project__img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 85%;
   padding: 20px 0;
+  margin: auto;
   height: auto;
   border-radius: 10px;
+}
+.project__img:hover {
+  transform: scale(1.01);
+  transition: transform 0.5s ease;
+  opacity: 0.95;
+  box-shadow: 0 2px 4px rgba(2, 0, 0, 4);
 }
 .projet__img img {
   width: 70%;
   margin: 20px 0;
 }
+
 
 .realisations__project--desc {
   margin-top: 1rem;
@@ -64,7 +71,7 @@
 
 .slick-dots li button:before {
   font-size: 20px;
-  color: #d53737;
+  color:var(--secondary-color);
 }
 
 
@@ -82,7 +89,7 @@ li {
 
 @media (max-width: 768px) {
   .project-slide {
-    padding: 1rem;
+    
   }
 
 

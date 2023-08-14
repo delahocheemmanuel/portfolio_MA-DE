@@ -21,7 +21,7 @@ const Home = () => {
       <Slider {...settings}>
         {ProjectsData.map((project, index) => (
           <div key={index} className="project-slide">
-            <h2>{project.title}</h2>
+            <h2>Réalisations</h2>
             <Link to={project.githubPagesLink}>
               <img className='project__img' src={project.imageSrc} alt={project.title} />
             </Link>
