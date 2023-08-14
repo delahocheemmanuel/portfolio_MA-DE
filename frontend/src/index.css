@@ -1,3 +1,5 @@
+
+
 /* Réinitialisation de style (reset) */
 body,
 h1, h2, h3, h4, h5, h6,
@@ -31,20 +33,34 @@ textarea {
   font-size: 100%;
   vertical-align: baseline;
 }
+
+
+
+/* Réinitialisation de style (reset) */
+/* ... (le reste du code reset) ... */
+
 /* Couleurs */
 :root {
   --primary-color: #f8fafb; /* Couleur primaire */
   --secondary-color: black; /* Couleur secondaire */
+  --background-light: #f8fafb; /* Couleur de fond en mode clair */
+  --background-dark: #1c1c1c; /* Couleur de fond en mode sombre */
 }
-
 
 /* Styles généraux */
 body {
   font-family: "Arial Black", sans-serif; /* Utilisation de la police Arial Black */
   line-height: 1.6;
-  background-color: var(--primary-color);
+  background-color: var(--background-light); /* Utilisation de la couleur de fond en mode clair */
   color: var(--secondary-color);
+  transition: background-color 0.3s ease; /* Transition fluide du fond */
 }
+
+body.dark-mode {
+  background-color: var(--background-dark); /* Utilisation de la couleur de fond en mode sombre */
+  color: var(--primary-color); /* Couleur du texte en mode sombre */
+}
+
 
 a {
   text-decoration: none;
@@ -53,9 +69,11 @@ a {
 
 a:hover {
   text-decoration: none;
-  color:red;
-  transform: scale(1.1);
+  color: red;
 }
+
+/* ... (le reste du code) ... */
+
 
 .container {
   max-width: 1200px;

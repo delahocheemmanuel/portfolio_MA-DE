@@ -1,5 +1,7 @@
 /* Header.css */
 @import "./../../index.css";
+
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -52,10 +54,21 @@
   .header {
      flex-direction: column;
      flex-wrap: wrap;
+     justify-content: center;
+
   }
 }
-@media screen and (max-width: 600px) {
-  .header {
-     
-  }
+@media screen and (max-width: 768px) {
+  .logo__made {
+    width: auto;
+    height: 40px;
+    margin: 0;
+}
+.header__NavLink {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 2rem;
+}
 }

@@ -33,3 +33,13 @@ footer {
     align-items: center; /* Alignement vertical du texte au centre */
     justify-content: center; /* Alignement horizontal du texte au centre */
 }
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+}
