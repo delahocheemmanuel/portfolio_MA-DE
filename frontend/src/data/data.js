@@ -8,7 +8,7 @@ const ProjectsData = [
       imageSrc: booki,
       description: 'Your project description here.',
       technologies: ['HTML', 'CSS', 'Responsive'],
-      githubPagesLink:'/Booki',
+      githubPagesLink:'https://delahocheemmanuel.github.io/site_projet_2',
       githubLink: 'https://github.com/delahocheemmanuel/site_projet_2',
     },
     {
@@ -16,7 +16,7 @@ const ProjectsData = [
       imageSrc: kasa,
       description: 'Your project description here.',
       technologies: ['React'],
-      githubPagesLink:'/Kasa',
+      githubPagesLink:'https://delahocheemmanuel.github.io/site_projet_6',
       githubLink: 'https://github.com/delahocheemmanuel/site_projet_6',
     },
     {
@@ -24,7 +24,7 @@ const ProjectsData = [
       imageSrc: grimoire,
       description: 'Your project description here.',
       technologies: ['Mongodb'],
-      githubPagesLink:'/Grimoire',
+      githubPagesLink:'https://delahocheemmanuel.github.io/site_projet_7',
       githubLink: 'https://github.com/delahocheemmanuel/site_projet_7',
     },
   ];

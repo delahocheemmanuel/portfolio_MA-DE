@@ -42,7 +42,7 @@ const Contact = () => {
 
         try {
             // Envoi des données au backend (port 4000)
-            const response = await fetch("http://localhost:4000/api/formData/save", {
+            const response = await fetch("https://portfolio-mailjs.onrender.com/api/formData", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

@@ -21,9 +21,9 @@ import './index.css';
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route exact path="/" element={<Main />}>
-            <Route path="/Home" element={<Home />} />
-            <Route path="/About" element={<About />} />
-            <Route path="/Contact" element={<Contact />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/Booki" element={<Booki />} />
             <Route path="/Kasa" element={<Kasa />} />
             <Route path="/Grimoire" element={<Grimoire />} />

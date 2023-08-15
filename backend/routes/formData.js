@@ -7,7 +7,7 @@ const verifyRecaptcha = require("../middleware/recaptcha"); // Importez le middl
 
 
 // Route pour enregistrer les données dans la base de données
-router.post("/save", verifyRecaptcha, FormDataController.saveFormData);
+router.post("/", verifyRecaptcha, FormDataController.saveFormData);
 
 
 module.exports = router;

@@ -9,7 +9,7 @@ function Main() {
 
   // Redirect to the /Home page on component mount
   useEffect(() => {
-    navigate('/Home');
+    navigate('/home');
   }, [navigate]);
 
   return (

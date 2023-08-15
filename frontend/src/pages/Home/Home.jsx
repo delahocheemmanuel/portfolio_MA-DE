@@ -22,7 +22,7 @@ const Home = () => {
         {ProjectsData.map((project, index) => (
           <div key={index} className="project-slide">
             <h2>Réalisations</h2>
-            <Link to={project.githubPagesLink}>
+            <Link to={project.githubPagesLink}target="_blank" rel="noopener noreferrer">
               <img className='project__img' src={project.imageSrc} alt={project.title} />
             </Link>
             <div className='realisations__project--desc'>
