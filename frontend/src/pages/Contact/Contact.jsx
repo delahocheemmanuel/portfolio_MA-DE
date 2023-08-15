@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Contact.css';
-import config from './config'; // Importez le fichier de configuration
 
-emailjs.init(config.emailjsPublicKey);
+
+
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -53,8 +53,7 @@ const Contact = () => {
             const data = await response.json();
             console.log(data); // Affiche la réponse du backend
 
-            // Envoi de l'e-mail après avoir soumis les données au backend
-            sendEmail();
+            
         } catch (error) {
             console.log(error);
             setMessage("L'envoi de l'e-mail a échoué."); // Définir le message en cas d'erreur
@@ -93,12 +92,7 @@ const Contact = () => {
                         onChange={handleChange}
                     ></textarea>
                 </div>
-                <div className="recaptcha-container">
-                    <div
-                        className="g-recaptcha"
-                        data-sitekey="6Lesj6AnAAAAAJ7qzlyPpxcIOXWGJPB8EtrgAFWG"
-                    ></div>
-                </div>
+                
                 <button className="form__contact--btn" type="submit">
                     Envoyer
                 </button>
