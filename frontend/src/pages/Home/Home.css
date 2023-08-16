@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   max-width: 80%;
-  height: 80%;
+  height: auto;
   margin:auto;
   padding-bottom: 150px;
 }
@@ -23,10 +23,11 @@
 .githubPages{
   border: none;
 }
-.project-slide h2{
+.Real,#About,#Contact h2{
   font-size: 2rem;
   margin: 10px 0;
-  color: #333;
+  color:var(--secondary-color);
+  
 
 }
 
@@ -59,7 +60,7 @@
   box-shadow: 0 2px 4px rgba(2, 0, 0, 4);
 }
 .projet__img img {
-  width: 70%;
+  width: 60%;
   margin: 20px 0;
 }
 
@@ -67,7 +68,20 @@
 .realisations__project--desc {
   margin-top: 1rem;
 }
+#contact{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+#about{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 
+.home__presentation {
+  display: flex;
+  flex-direction: column;
+  
+}
 
 .slick-dots li button:before {
   font-size: 20px;
@@ -87,9 +101,14 @@ li {
   margin: 0.5rem 0;
 }
 
+
+
 @media (max-width: 768px) {
-  .project-slide {
-    
+  .project__img {
+    width: 100%;
+  }
+  .slick-prev:before, .slick-next:before {
+    display:none;
   }
 
 

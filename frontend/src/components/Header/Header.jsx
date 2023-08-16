@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import logo_MADE from '../../assets/images/logo/logo MA-DE.png';
 import './Header.css';
 
@@ -8,14 +8,12 @@ const Header = () => {
         <header>
             <img className="logo__made" src={logo_MADE} alt="LOGO" />
             <nav className="header__NavLink">
-                <Link to="/home"> Accueil</Link>
-                <Link to="/about" className="About">
-                    {' '}
+                <a href="#About" className="About">
                     A propos
-                </Link>
-                <Link to="/contact" className="Contact">
+                </a>
+                <a href="#Contact" className="Contact">
                     Contact
-                </Link>
+                </a>
             </nav>
         </header>
     );

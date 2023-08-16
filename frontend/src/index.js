@@ -1,38 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'; // Importez createRoot depuis react-dom/client
-import {
-    createBrowserRouter,
-    createRoutesFromElements,
-    RouterProvider,
-    Route,
-} from 'react-router-dom';
+import App from './app';
 
-
-import Main from './pages/Main';
-import About from './pages/About/About';
-import Contact from './pages/Contact/Contact';
-import Home from './pages/Home/Home';
-import Booki from './pages/Booki/Booki';
-import Kasa from './pages/Kasa/Kasa';
-import Grimoire from './pages/Grimoire/Grimoire';
 
 import './index.css';
 
-const router = createBrowserRouter(
-    createRoutesFromElements(
-        <Route exact path="/" element={<Main />}>
-            <Route path="/home" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/Booki" element={<Booki />} />
-            <Route path="/Kasa" element={<Kasa />} />
-            <Route path="/Grimoire" element={<Grimoire />} />
-        </Route>
-    )
-);
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
     <React.StrictMode>
-            <RouterProvider router={router} />
+            <App/>
     </React.StrictMode>
 );

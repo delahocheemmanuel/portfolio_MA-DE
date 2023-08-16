@@ -53,6 +53,9 @@ const Contact = () => {
             const data = await response.json();
             console.log(data); // Affiche la réponse du backend
 
+            // Envoi de l'e-mail après avoir soumis les données au backend
+            sendEmail();
+
             
         } catch (error) {
             console.log(error);
