@@ -3,16 +3,20 @@
 header{
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content:space-around;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: var(--primary-color);
+  position: fixed; /* Le footer restera en bas de la page */
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  background-color: var(--background-color);
+  height: 150px;
 }
 
 
 .logo__made{
   width: auto;
-  height: 75px;
+  height: 100px;
 }
 .logo__made img{
   width: auto;
@@ -21,6 +25,9 @@ header{
 
 .header__NavLink {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 1rem;
   gap: 2rem;
   font-size: 2rem;
   margin-left: 2rem;
@@ -29,10 +36,10 @@ header{
 
 .header__NavLink a {
   text-decoration: none;
-  color:var(--secondary-color);
   font-size: 2rem;
   font-weight: bold;
   transition: color 0.3s ease;
+  margin-left: 20px;
 }
 
 
@@ -41,15 +48,7 @@ header{
   height: 30px;
 }
 
-/* Style pour le bouton de changement de mode sombre */
-.dark-mode-toggle {
-  cursor: pointer;
-  transition: transform 1.1s ease;
-}
 
-.dark-mode-toggle:hover {
-  transform: scale(1.1);
-}
 
 /* Responsive Styles */
 @media screen and (max-width: 1200px) {
@@ -69,9 +68,12 @@ header{
 .header__NavLink {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  padding-top: 1rem;
-  gap: 1rem;
-  font-size: 1rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  height: 100px;
 }
 }

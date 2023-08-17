@@ -1,15 +1,21 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
 import './About.css';
+import Footer from '../Footer/Footer';
 import StarRating from '../../utils/StarRating';
-import { FaReact } from 'react-icons/fa';
-import { FaNodeJs } from 'react-icons/fa';
-import { FaHtml5 } from 'react-icons/fa';
-import { FaCss3Alt } from 'react-icons/fa';
-import { FaSass } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-import { SiMongodb } from 'react-icons/si';
-import { SiRender} from 'react-icons/si';
+import {
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaSass,
+  FaGithub,
+  FaDigitalOcean,
+} from 'react-icons/fa';
+import { SiMongodb, SiRender, SiAdobephotoshop } from 'react-icons/si';
+import { MdPictureAsPdf } from 'react-icons/md';
+import { TbSeo } from 'react-icons/tb';
+
+
 
 
 
@@ -21,32 +27,48 @@ const About = () => {
                 <h2>Delahoche Emmanuel</h2>
                 <p>Email : delahochemanu@hotmail.fr</p>
                 <p>Téléphone : 06 78 91 45 79</p>
-                <p>112 rue saint-martin 60600 Etouy</p>
-                <>Permis B</>
+                <a href="./CV_Delahoche_Emmanuel.pdf" target="_blank" rel="noopener noreferrer" download="CV_Delahoche_Emmanuel.pdf">
+                    Curriculum vitae <MdPictureAsPdf />
+                </a>
             </section>
             <section className='section__objectif--experience'>
             <section className="section__objectif">
-                <h2>Objectif professionnel</h2>
-                <p>
-                    Un résumé court et percutant de votre objectif professionnel
-                </p>
-            </section>
+    <h2>Objectif professionnel</h2>
+    <p>
+        Je suis à la recherche d'opportunités en tant que développeur web junior, avec une préférence pour des postes en CDI ou CDD à 90 %, offrant la possibilité de télétravail. Ma passion pour la programmation et ma solide expérience dans la création d'applications web me permettent de contribuer de manière significative à des projets innovants et stimulants. En parallèle, je souhaite également explorer le domaine du freelance pour élargir mes compétences et collaborer avec une variété de clients et de projets. Mon objectif est de continuer à apprendre, à développer mes compétences et à apporter une valeur ajoutée à chaque opportunité professionnelle.
+    </p>
+</section>
+
             
             <section className="section__experience">
                 <h2>Expérience professionnelle</h2>
+                <p>developpeur junior</p>
+                <a href="./CV_Delahoche_Emmanuel.pdf" target="_blank" rel="noopener noreferrer" download="CV_Delahoche_Emmanuel.pdf">
+                <p>pour mon expérience global voir mon CV</p>
+                </a>
                 <ul>
-                    <li>
-                        <p>Poste, Entreprise</p>
-                        <p>Date de début - Date de fin</p>
-                        <p>Description des responsabilités et réalisations</p>
-                    </li>
-                    <li>
-                        <p>Poste, Entreprise</p>
-                        <p>Date de début - Date de fin</p>
-                        <p>Description des responsabilités et réalisations</p>
-                    </li>
-                    {/* Ajoutez d'autres expériences professionnelles ici */}
+                    <li>électricien batiment</li>
+                    <li>électricien industriel</li>
+                    <li>électricien de maintenance</li>
+                    <li>technicien de maintenance industrielle</li>
+                    <li>mécanicien industriel</li>
+                    <li>hydraulicien</li>
+                    <li>pneumaticien</li>
+                    <li>automatisme industriel</li>
+                    <li>serveur/barman/cuisinier</li>
                 </ul>
+                {/* <ul>
+                    <li>
+                        <p>Poste, Entreprise</p>
+                        <p>Date de début - Date de fin</p>
+                        <p>Description des responsabilités et réalisations</p>
+                    </li>
+                    <li>
+                        <p>Poste, Entreprise</p>
+                        <p>Date de début - Date de fin</p>
+                        <p>Description des responsabilités et réalisations</p>
+                    </li>
+                </ul> */}
             </section>
             </section>
             <section className="section__formation">
@@ -56,16 +78,14 @@ const About = () => {
                         <p>Développeur Web, OpenClassrooms</p>
                         <p>08/2023</p>
                         <p>
-                            HTML,CSS,SCSS,SASS,Javascript,API,Developpeur
-                            Agile,SEO,React,MongoDB
+                            HTML, CSS, SCSS, SASS, Javascript, API, Méthode Agile, SEO, React, MongoDB
                         </p>
                     </li>
                     <li>
-                        <p>Diplôme, Institution</p>
-                        <p>Date d'obtention</p>
+                        <p>developpeur web, OpenClassrooms</p>
+                        <p>21/08/23 ?</p>
                         <p>
-                            Description des études et des réalisations
-                            académiques
+                        Maitrisez le développement web et créez des sites web de A à Z !
                         </p>
                     </li>
                     {/* Ajoutez d'autres formations académiques ici */}
@@ -77,43 +97,58 @@ const About = () => {
             <ul>
                 <li className="skill-list-item">
                     <FaReact className="skill-icon" />
-                    <StarRating score={4.5} /> {/* Par exemple, score de 4.5 */}
+                    <StarRating score={4.4} /> 
                     <span className="skill-name">React</span>
                 </li>
                 <li className="skill-list-item">
                     <FaNodeJs className="skill-icon" />
-                    <StarRating score={3} /> {/* Par exemple, score de 3 */}
+                    <StarRating score={3} /> 
                     <span className="skill-name">Node.js</span>
                 </li>
                 <li className="skill-list-item">
                     <FaHtml5 className="skill-icon" />
-                    <StarRating score={4} /> {/* Par exemple, score de 4 */}
+                    <StarRating score={4} /> 
                     <span className="skill-name">HTML</span>
                 </li>
                 <li className="skill-list-item">
                     <FaCss3Alt className="skill-icon" />
-                    <StarRating score={4} /> {/* Par exemple, score de 4 */}
+                    <StarRating score={4} /> 
                     <span className="skill-name">CSS</span>
                 </li>
                 <li className="skill-list-item">
                     <FaSass className="skill-icon" />
-                    <StarRating score={4} /> {/* Par exemple, score de 4 */}
+                    <StarRating score={4} /> 
                     <span className="skill-name">SASS</span>
                 </li>
                 <li className="skill-list-item">
                     <FaGithub className="skill-icon" />
-                    <StarRating score={4} /> {/* Par exemple, score de 4 */}
-                    <span className="skill-name">GIT</span>
-                </li>
-                <li className="skill-list-item">
-                    <SiMongodb className="skill-icon" />
-                    <StarRating score={3} /> {/* Par exemple, score de 3 */}
-                    <span className="skill-name">MongoDB</span>
+                    <StarRating score={4} /> 
+                    <span className="skill-name">GITHUB</span>
                 </li>
                 <li className="skill-list-item">
                     <SiRender className="skill-icon" />
-                    <StarRating score={3} /> {/* Par exemple, score de 3 */}
+                    <StarRating score={3} /> 
                     <span className="skill-name">Render</span>
+                </li>
+                <li className="skill-list-item">
+                    <SiMongodb className="skill-icon" />
+                    <StarRating score={3} /> 
+                    <span className="skill-name">MongoDB</span>
+                </li>
+                <li className="skill-list-item">
+                    <FaDigitalOcean className="skill-icon" />
+                    <StarRating score={1} /> 
+                    <span className="skill-name">DigitalOcean</span>
+                </li>
+                <li className="skill-list-item">
+                    <SiAdobephotoshop className="skill-icon" />
+                    <StarRating score={3} /> 
+                    <span className="skill-name">PhotoShop</span>
+                </li>
+                <li className="skill-list-item">
+                    <TbSeo className="skill-icon" />
+                    <StarRating score={3} /> 
+                    <span className="skill-name">SEO</span>
                 </li>
             </ul>
         </section>

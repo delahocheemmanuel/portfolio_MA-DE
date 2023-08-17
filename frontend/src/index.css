@@ -39,25 +39,18 @@ textarea {
 
 /* Couleurs */
 :root {
-  --primary-color: #f8fafb; /* Couleur primaire */
-  --secondary-color: black; /* Couleur secondaire */
-  --background-light: #f8fafb; /* Couleur de fond en mode clair */
-  --background-dark: #1c1c1c; /* Couleur de fond en mode sombre */
+  --primary-color: #030a0d; /* Couleur primaire */
+  --secondary-color:rgb(17, 216, 63); /* Couleur secondaire */
+  --background-color: #04181e; /* Couleur de fond en mode clair */
 }
 
 /* Styles généraux */
 body {
   font-family: "Arial Black", sans-serif; /* Utilisation de la police Arial Black */
   line-height: 1.6;
-  box-sizing: content-box;
-  background-color: var(--background-light); /* Utilisation de la couleur de fond en mode clair */
+  box-sizing: border-box;
+  background-color: var(--background-color); /* Utilisation de la couleur de fond en mode clair */
   color: var(--secondary-color);
-  transition: background-color 0.3s ease; /* Transition fluide du fond */
-}
-
-body.dark-mode {
-  background-color: var(--background-dark); /* Utilisation de la couleur de fond en mode sombre */
-  color: var(--primary-color); /* Couleur du texte en mode sombre */
 }
 
 
@@ -74,7 +67,7 @@ a:hover {
 
 a.dark-mode {
   background-color: var(--background-dark);
-  color: var(--primary-color);
+  color: var(--background-light);
 }
 
 
@@ -85,3 +78,4 @@ a.dark-mode {
   padding: 0 20px;
 }
 
+/* Ajoutez vos styles spécifiques ci-dessous */

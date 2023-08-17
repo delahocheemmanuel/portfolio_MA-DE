@@ -19,52 +19,55 @@ const Home = () => {
 
     return (
         <main className="home-container">
-          <h2 className='Real'>Réalisations:</h2>
-            <section className="home" id="home">
-            
-            <Slider {...settings}>
-                {ProjectsData.map((project, index) => (
-                    <div key={index} className="project-slide">
-                        
-                        <Link
-                            to={project.githubPagesLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <img
-                                className="project__img"
-                                src={project.imageSrc}
-                                alt={project.title}
-                            />
-                        </Link>
-                        <div className="realisations__project--desc">
-                            <Link
-                                to={project.githubLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                lien GitHub
-                            </Link>
-                            <ul>
-                                {project.technologies.map((tech, techIndex) => (
-                                    <li key={techIndex}>{tech}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                ))}
-            </Slider>
-            </section>
             <div className="home__presentation">
-            <section className="home__presentation--about" id="About">
-              <h2>A propos:</h2>
-            </section>
-            <About />
-            <section className="home__presentation--contact" id="Contact">
-              <h2>Contact:</h2>
-            </section>
-            <Contact />
-            
+                <section
+                    className="home__presentation--about"
+                    id="About"
+                ></section>
+                <About />
+                <section className="Real" id="Real">
+                    <h2 className="Real">Réalisations:</h2>
+                    <Slider {...settings}>
+                        {ProjectsData.map((project, index) => (
+                            <div key={index} className="project-slide">
+                                <Link
+                                    to={project.githubPagesLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img
+                                        className="project__img"
+                                        src={project.imageSrc}
+                                        alt={project.title}
+                                    />
+                                </Link>
+                                <div className="realisations__project--desc">
+                                    <Link
+                                        to={project.githubLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        lien GitHub
+                                    </Link>
+                                    <ul className='description' >
+                                        {project.description}
+                                    </ul>
+                                    <ul className='technologie'>
+                                        {project.technologies.map(
+                                            (tech, techIndex) => (
+                                                <li key={techIndex}>{tech}</li>
+                                            )
+                                        )}
+                                    </ul>
+                                </div>
+                            </div>
+                        ))}
+                    </Slider>
+                </section>
+                <section className="home__presentation--contact" id="Contact">
+                    <h2>Contact:</h2>
+                </section>
+                <Contact />
             </div>
         </main>
     );

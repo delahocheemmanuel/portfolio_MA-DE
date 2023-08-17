@@ -5,7 +5,7 @@ footer {
     display: flex; /* Pour afficher les éléments en ligne */
     align-items: center; /* Alignement vertical des éléments au centre */
     justify-content: center; /* Alignement horizontal des éléments au centre */
-    background-color:var(--primary-color); /* Couleur de fond du footer */
+    background-color:var(--background-color); /* Couleur de fond du footer */
     color:var(--secondary-color); /* Couleur du texte du footer */
     padding: 10px; /* Espacement interne du footer */
     position: fixed; /* Le footer restera en bas de la page */

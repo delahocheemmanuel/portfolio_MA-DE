@@ -7,6 +7,7 @@
   max-width: 80%;
   height: auto;
   margin:auto;
+  padding-top: 150px;
   padding-bottom: 150px;
 }
 
@@ -17,17 +18,17 @@
   justify-content: center;
   text-align: center;
   width: 100%;
-  background-color:var--(primary-color);
+  background-color:var--(--background-light);
   border-radius: 10px;
 }
 .githubPages{
   border: none;
 }
-.Real,#About,#Contact h2{
+#Real,#Contact h2{
   font-size: 2rem;
   margin: 10px 0;
   color:var(--secondary-color);
-  
+  padding-top: 30px;
 
 }
 
@@ -48,7 +49,8 @@
   justify-content: center;
   align-items: center;
   width: 85%;
-  padding: 20px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin: auto;
   height: auto;
   border-radius: 10px;
@@ -67,6 +69,17 @@
 
 .realisations__project--desc {
   margin-top: 1rem;
+  font-size: 1rem;
+  gap: 20px;
+}
+.technologie{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 #contact{
   margin-top: 3rem;
@@ -84,6 +97,7 @@
 }
 
 .slick-dots li button:before {
+  
   font-size: 20px;
   color:var(--secondary-color);
 }

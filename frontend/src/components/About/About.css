@@ -1,20 +1,22 @@
 /* About.css */
 @import './../../index.css';
 .container {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial Black', sans-serif;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
     margin: 0 auto;
     padding-bottom: 100px;
-    background-color: #f0f0f0;
+    background-color: var(--background-light);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .container h2 {
     font-size: 1.5rem;
     font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .header {
     text-align: center;
@@ -24,28 +26,48 @@
 .header h2 {
     font-size: 36px;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--primarycolor);
 }
 
 .header p {
     font-size: 18px;
-    color: #555;
+    color: var(--primarycolor);
 }
-
+.header a {
+    font-size: 2rem;
+}
+.section__objectif {
+    max-width: 50%;
+    margin-right: 40px;
+}
 .section__objectif--experience {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: top;
     margin-bottom: 30px;
 }
+.section__formation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+.section__formation ul{
+
+}
+
 .section__competence {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 30px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .section__competence ul {
     display: flex;
@@ -54,18 +76,29 @@
     justify-content: center;
     align-items: center;
     align-items: top;
-    gap: 20px;
+    gap: 40px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+.section__competence li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: top;
     margin-bottom: 30px;
 }
-.section__competence li{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-items: top;
-  margin-bottom: 30px;
+.skill-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: top;
+    margin-bottom: 30px;
+    font-size: 1rem;
 }
-.skill-list-item .skill-name {
+.skill-name {
+    max-width: 70px;
     opacity: 0; /* Masque le nom de la compétence par défaut */
     transition: opacity 0.3s; /* Ajoute une transition fluide */
 }
@@ -73,27 +106,38 @@
 .skill-list-item:hover .skill-name {
     opacity: 1; /* Affiche le nom de la compétence au survol */
 }
-.skill-icon{
-  font-size: 3rem;
+.skill-icon {
+    font-size: 3rem;
 }
 
 .section__lang--hobby {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: top;
     margin-bottom: 30px;
 }
+.section__lang {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+.section__hobby {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
 .section {
     margin-bottom: 30px;
-}
-
-.section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
 }
 
 .section ul {
@@ -105,6 +149,14 @@
 .section li {
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 1200px) {
+  .section__objectif{
+    max-width: 100%;
+    margin-right: 0px;
+  }
+}
+
 
 /* Media Query pour les petits écrans */
 @media screen and (max-width: 600px) {
@@ -118,5 +170,18 @@
 
     .section h2 {
         font-size: 24px;
+    }
+    .section__objectif--experience {
+        display: flex;
+        margin-right: 0px;
+    }
+    .section__objectif {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 100%;
+        margin-right: 40px;
     }
 }

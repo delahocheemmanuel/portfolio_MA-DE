@@ -14,7 +14,7 @@
   margin-top: 50px;
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color:var(--background-color);
 }
 .form__contact form{
   display: flex;
@@ -46,25 +46,32 @@
 }
 
 .recaptcha-container {
+  display: flex;
+  width: auto;
+  height: auto;
   margin-bottom: 15px;
 }
 
-.form__contact--btn {
+.form__contact--btn{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #007bff;
-  color: #fff;
+  justify-content:flex-end;
+  max-width: 50%;
+  background-color:var(--secondary-color);
+  color:var(--primary-color);
   padding: 10px 20px;
-  border: none;
+  margin: auto;
+  border-color: var(--background-color);
   border-radius: 4px;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 600px) {
   .form__contact {
       width: 70%;
+  }
+  .form__contact--btn{
+    font-size: 1rem;
   }
 }
