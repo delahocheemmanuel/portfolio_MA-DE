@@ -8,9 +8,7 @@
     height: auto;
     margin: 0 auto;
     padding-bottom: 100px;
-    background-color: var(--background-light);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-color);
 }
 .container h2 {
     font-size: 1.5rem;
@@ -23,22 +21,25 @@
     margin-bottom: 30px;
 }
 
-.header h2 {
+.header h1 {
     font-size: 36px;
     margin-bottom: 10px;
-    color: var(--primarycolor);
 }
 
 .header p {
     font-size: 18px;
-    color: var(--primarycolor);
 }
 .header a {
     font-size: 2rem;
 }
 .section__objectif {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 50%;
     margin-right: 40px;
+}
+.section__objectif h2 {
 }
 .section__objectif--experience {
     display: flex;
@@ -57,8 +58,7 @@
     margin-bottom: 30px;
     font-size: 1rem;
 }
-.section__formation ul{
-
+.section__formation ul {
 }
 
 .section__competence {
@@ -151,12 +151,11 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .section__objectif{
-    max-width: 100%;
-    margin-right: 0px;
-  }
+    .section__objectif {
+        max-width: 100%;
+        margin-right: 0px;
+    }
 }
-
 
 /* Media Query pour les petits écrans */
 @media screen and (max-width: 600px) {

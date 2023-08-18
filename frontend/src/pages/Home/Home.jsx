@@ -4,7 +4,7 @@ import ProjectsData from '../../data/data';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Link } from 'react-router-dom';
-import './Home.css';
+import './Home.sass';
 import Contact from '../../components/Contact/Contact';
 import About from '../../components/About/About';
 
@@ -26,7 +26,7 @@ const Home = () => {
                 ></section>
                 <About />
                 <section className="Real" id="Real">
-                    <h2 className="Real">Réalisations:</h2>
+                    <h2>Réalisations:</h2>
                     <Slider {...settings}>
                         {ProjectsData.map((project, index) => (
                             <div key={index} className="project-slide">
@@ -42,6 +42,10 @@ const Home = () => {
                                     />
                                 </Link>
                                 <div className="realisations__project--desc">
+                                    
+                                    <ul className='description' >
+                                        {project.description}
+                                    </ul>
                                     <Link
                                         to={project.githubLink}
                                         target="_blank"
@@ -49,9 +53,6 @@ const Home = () => {
                                     >
                                         lien GitHub
                                     </Link>
-                                    <ul className='description' >
-                                        {project.description}
-                                    </ul>
                                     <ul className='technologie'>
                                         {project.technologies.map(
                                             (tech, techIndex) => (
@@ -59,6 +60,7 @@ const Home = () => {
                                             )
                                         )}
                                     </ul>
+                                    
                                 </div>
                             </div>
                         ))}

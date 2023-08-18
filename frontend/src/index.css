@@ -15,7 +15,10 @@ fieldset, legend {
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
   font-weight: normal;
-  
+  color: var(--secondary-color);
+}
+h2{
+  text-decoration: underline;
 }
 
 ul {
@@ -39,9 +42,9 @@ textarea {
 
 /* Couleurs */
 :root {
-  --primary-color: #030a0d; /* Couleur primaire */
-  --secondary-color:rgb(17, 216, 63); /* Couleur secondaire */
-  --background-color: #04181e; /* Couleur de fond en mode clair */
+  --primary-color: #f8fbfd; /* Couleur primaire */
+  --secondary-color:rgb(246, 244, 235); /* Couleur secondaire */
+  --background-color: #065271; /* Couleur de fond en mode clair */
 }
 
 /* Styles généraux */
@@ -62,20 +65,13 @@ a {
 a:hover {
   text-decoration: none;
   transform: scale(1.1);
-  color: red;
+  color: rgb(224, 21, 21);
 }
-
-a.dark-mode {
-  background-color: var(--background-dark);
-  color: var(--background-light);
-}
-
-
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-top: 50px;
 }
 
 /* Ajoutez vos styles spécifiques ci-dessous */

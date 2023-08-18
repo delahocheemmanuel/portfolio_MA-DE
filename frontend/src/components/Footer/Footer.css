@@ -6,7 +6,7 @@ footer {
     align-items: center; /* Alignement vertical des éléments au centre */
     justify-content: center; /* Alignement horizontal des éléments au centre */
     background-color:var(--background-color); /* Couleur de fond du footer */
-    color:var(--secondary-color); /* Couleur du texte du footer */
+    color:var(--primary-color); /* Couleur du texte du footer */
     padding: 10px; /* Espacement interne du footer */
     position: fixed; /* Le footer restera en bas de la page */
     left: 0;
@@ -39,6 +39,17 @@ footer {
     text-decoration: none;
     font-size: 3rem;
    
+}
+.footer__link {
+    display: flex;
+    flex-direction:column;
+}
+.footer__link span{
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+.footer__link:hover span{
+    opacity: 1;
 }
 /* Responsive Styles */
 @media screen and (max-width: 1200px) {

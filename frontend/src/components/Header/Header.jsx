@@ -1,12 +1,16 @@
 import React from 'react';
-import logo_MADE from '../../assets/images/logo/logo MA-DE.png';
+import logo_MADE_w from '../../assets/images/logo/logo MA-DE darkmode.png';
 import './Header.css';
-
 
 const Header = () => {
     return (
         <header className="header__container">
-            <img className="logo__made" src={logo_MADE} alt="LOGO" />
+            <img
+                className="logo__made"
+                src={logo_MADE_w}
+                alt="Logo portfolio"
+            />
+
             <nav className="header__NavLink">
                 <a href="#Real" className="Real">
                     Réalisations

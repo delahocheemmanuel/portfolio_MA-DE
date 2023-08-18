@@ -1,0 +1,110 @@
+// Importez votre fichier de styles principal
+@import "./../../index.css"
+
+// Styles pour la section principale
+.home-container
+  display: flex
+  flex-direction: column
+  max-width: 80%
+  height: auto
+  margin: auto
+  padding-top: 150px
+  margin-bottom: 300px
+
+// Styles pour chaque diapositive de projet
+.project-slide
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  width: 100%
+  background-color: var(--background-light)
+  border-radius: 10px
+  .githubPages
+    border: none
+
+// Styles pour les titres "Real" et "Contact"
+#Real, #Contact h2
+  font-size: 2rem
+  margin: 10px 0
+  color: var(--primary-color)
+  padding-top: 30px
+
+#Contact h2
+  margin-top: 250px
+
+// Styles pour les flèches de navigation du carousel
+.slick-prev:before, .slick-next:before
+  font-family: 'slick'
+  font-size: 50px
+  color: var(--primary-color)
+
+// Styles pour les images des diapositives
+.slick-slide img
+  display: flex
+  justify-content: center
+  align-items: center
+
+.project__img
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 85%
+  margin: auto
+  margin-top: 50px
+  margin-bottom: 50px
+  border-radius: 10px
+  &:hover
+    transform: scale(1.01)
+    transition: transform 0.5s ease
+    opacity: 0.95
+    box-shadow: 0 4px 8px rgb(251 245 245 / 10%)
+
+// Styles pour les descriptions de projet et les technologies utilisées
+.realisations__project--desc
+  margin-top: 1rem
+  font-size: 1rem
+  gap: 20px
+
+.technologie
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  gap: 20px
+  margin-top: 1rem
+  font-size: 1rem
+
+// Styles pour la section de présentation
+.home__presentation
+  display: flex
+  flex-direction: column
+
+// Styles pour les points de pagination du carousel
+.slick-active
+  color: var(--primary-color)
+
+.slick-dots li button:before
+  font-size: 20px
+  color: var(--secondary-color)
+
+.slick-dots li.slick-active button:before
+  opacity: 1
+  color: var(--primary-color)
+
+// Styles pour les listes et les éléments de liste
+ul
+  list-style: none
+  padding: 0
+  margin: 1rem 0
+
+li
+  margin: 0.5rem 0
+
+// Styles pour les petits écrans (600px et moins)
+@media (max-width: 600px)
+  .project__img
+    width: 100%
+  .slick-prev:before, .slick-next:before
+    display: none

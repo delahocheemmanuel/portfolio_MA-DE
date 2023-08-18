@@ -8,6 +8,7 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaSass,
+  FaFigma,
   FaGithub,
   FaDigitalOcean,
 } from 'react-icons/fa';
@@ -20,11 +21,12 @@ import { TbSeo } from 'react-icons/tb';
 
 
 
+
 const About = () => {
     return (
         <main className="container">
             <section className="header">
-                <h2>Delahoche Emmanuel</h2>
+                <h1>Portfolio Delahoche Emmanuel</h1>
                 <p>Email : delahochemanu@hotmail.fr</p>
                 <p>Téléphone : 06 78 91 45 79</p>
                 <a href="./CV_Delahoche_Emmanuel.pdf" target="_blank" rel="noopener noreferrer" download="CV_Delahoche_Emmanuel.pdf">
@@ -43,9 +45,7 @@ const About = () => {
             <section className="section__experience">
                 <h2>Expérience professionnelle</h2>
                 <p>developpeur junior</p>
-                <a href="./CV_Delahoche_Emmanuel.pdf" target="_blank" rel="noopener noreferrer" download="CV_Delahoche_Emmanuel.pdf">
-                <p>pour mon expérience global voir mon CV</p>
-                </a>
+                <p>exemples de métier pratiqué,voir cv pour plus de précisions</p>
                 <ul>
                     <li>électricien batiment</li>
                     <li>électricien industriel</li>
@@ -76,7 +76,7 @@ const About = () => {
                 <ul>
                     <li>
                         <p>Développeur Web, OpenClassrooms</p>
-                        <p>08/2023</p>
+                        <p>2023</p>
                         <p>
                             HTML, CSS, SCSS, SASS, Javascript, API, Méthode Agile, SEO, React, MongoDB
                         </p>
@@ -93,65 +93,70 @@ const About = () => {
             </section>
 
             <section className="section__competence">
-            <h2>Compétences</h2>
-            <ul>
-                <li className="skill-list-item">
-                    <FaReact className="skill-icon" />
-                    <StarRating score={4.4} /> 
-                    <span className="skill-name">React</span>
-                </li>
-                <li className="skill-list-item">
-                    <FaNodeJs className="skill-icon" />
-                    <StarRating score={3} /> 
-                    <span className="skill-name">Node.js</span>
-                </li>
-                <li className="skill-list-item">
-                    <FaHtml5 className="skill-icon" />
-                    <StarRating score={4} /> 
-                    <span className="skill-name">HTML</span>
-                </li>
-                <li className="skill-list-item">
-                    <FaCss3Alt className="skill-icon" />
-                    <StarRating score={4} /> 
-                    <span className="skill-name">CSS</span>
-                </li>
-                <li className="skill-list-item">
-                    <FaSass className="skill-icon" />
-                    <StarRating score={4} /> 
-                    <span className="skill-name">SASS</span>
-                </li>
-                <li className="skill-list-item">
-                    <FaGithub className="skill-icon" />
-                    <StarRating score={4} /> 
-                    <span className="skill-name">GITHUB</span>
-                </li>
-                <li className="skill-list-item">
-                    <SiRender className="skill-icon" />
-                    <StarRating score={3} /> 
-                    <span className="skill-name">Render</span>
-                </li>
-                <li className="skill-list-item">
-                    <SiMongodb className="skill-icon" />
-                    <StarRating score={3} /> 
-                    <span className="skill-name">MongoDB</span>
-                </li>
-                <li className="skill-list-item">
-                    <FaDigitalOcean className="skill-icon" />
-                    <StarRating score={1} /> 
-                    <span className="skill-name">DigitalOcean</span>
-                </li>
-                <li className="skill-list-item">
-                    <SiAdobephotoshop className="skill-icon" />
-                    <StarRating score={3} /> 
-                    <span className="skill-name">PhotoShop</span>
-                </li>
-                <li className="skill-list-item">
-                    <TbSeo className="skill-icon" />
-                    <StarRating score={3} /> 
-                    <span className="skill-name">SEO</span>
-                </li>
-            </ul>
-        </section>
+        <h2>Compétences</h2>
+        <ul>
+          <li className="skill-list-item">
+            <FaReact className="skill-icon" aria-label="React" />
+            <StarRating score={4.4} />
+            <span className="skill-name">React</span>
+          </li>
+          <li className="skill-list-item">
+            <FaNodeJs className="skill-icon" aria-label="Node.js" />
+            <StarRating score={3} />
+            <span className="skill-name">Node.js</span>
+          </li>
+          <li className="skill-list-item">
+            <FaHtml5 className="skill-icon" aria-label="HTML" />
+            <StarRating score={4} />
+            <span className="skill-name">HTML</span>
+          </li>
+          <li className="skill-list-item">
+            <FaCss3Alt className="skill-icon" aria-label="CSS" />
+            <StarRating score={4} />
+            <span className="skill-name">CSS</span>
+          </li>
+          <li className="skill-list-item">
+            <FaSass className="skill-icon" aria-label="SASS" />
+            <StarRating score={4} />
+            <span className="skill-name">SASS</span>
+          </li>
+          <li className="skill-list-item">
+            <FaGithub className="skill-icon" aria-label="GitHub" />
+            <StarRating score={4} />
+            <span className="skill-name">GITHUB</span>
+          </li>
+          <li className="skill-list-item">
+            <SiRender className="skill-icon" aria-label="Render" />
+            <StarRating score={3} />
+            <span className="skill-name">Render</span>
+          </li>
+          <li className="skill-list-item">
+            <SiMongodb className="skill-icon" aria-label="MongoDB" />
+            <StarRating score={3} />
+            <span className="skill-name">MongoDB</span>
+          </li>
+          <li className="skill-list-item">
+            <FaDigitalOcean className="skill-icon" aria-label="DigitalOcean" />
+            <StarRating score={1} />
+            <span className="skill-name">DigitalOcean</span>
+          </li>
+          <li className="skill-list-item">
+            <SiAdobephotoshop className="skill-icon" aria-label="Photoshop" />
+            <StarRating score={3} />
+            <span className="skill-name">PhotoShop</span>
+          </li>
+          <li className="skill-list-item">
+            <TbSeo className="skill-icon" aria-label="SEO" />
+            <StarRating score={3} />
+            <span className="skill-name">SEO</span>
+          </li>
+          <li className="skill-list-item">
+            <FaFigma className="skill-icon" aria-label="Figma" />
+            <StarRating score={3} />
+            <span className="skill-name">Figma</span>
+          </li>
+        </ul>
+      </section>
             <section className='section__lang--hobby'>
             <section className="section__lang">
                 <h2>Langues</h2>

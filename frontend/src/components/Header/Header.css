@@ -62,8 +62,9 @@ header{
 @media screen and (max-width: 768px) {
   .logo__made {
     width: auto;
-    height: 40px;
+    height: 50px;
     margin: 0;
+    padding-top: 20px;
 }
 .header__NavLink {
   display: flex;
