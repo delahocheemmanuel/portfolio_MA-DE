@@ -1,5 +1,5 @@
 /* Contact.css */
-@import "./../../index.css";
+@import "./../../style.css";
 
 .main__contact {
   display: flex;
@@ -9,13 +9,15 @@
 }
 
 .form__contact {
+  display: flex;
+  flex-direction: column;
   width: 70%;
   padding: 30px;
   margin-top: 50px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--background-color);
   border-radius: 5px;
   box-shadow:  2px 2px rgba(243, 241, 241, 0.1);
-  background-color:var(--background-color);
+  background-color:white;
   margin: auto;
 }
 .form__contact form{
@@ -35,7 +37,7 @@
   margin-bottom: 5px;
   padding-bottom: 8px;
   font-weight: bold;
-  color:var(--primary-color);
+  color:var(--background-color);
   margin: auto;
 }
 
@@ -44,10 +46,16 @@
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 8px 0px 8px 0px;
+  padding: 8px
 }
 .form__contact textarea {
   height: 150px;
+}
+.form__contact p{
+  color:var(--background-color);
+  font-weight: 500;
+  margin: auto;
+  margin-bottom: 15px;
 }
 
 .recaptcha-container {
@@ -65,8 +73,8 @@
   color:var(--background-color);
   padding: 10px 20px;
   margin: auto;
-  border-color: var(--background-color);
-  border-radius: 4px;
+  border: 2px solid var(--background-color);
+  border-radius: 20px;
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: 900;
@@ -75,6 +83,12 @@
   transform: scale(1.1);
   color:red;
 
+}
+.message__response{
+  display: flex;
+  color:var(--background-color);
+  font-size: 1rem;
+  padding-top: 20px;
 }
 
 /* Responsive Styles */

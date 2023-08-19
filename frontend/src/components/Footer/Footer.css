@@ -1,71 +1,86 @@
-/* CSS pour le footer */
+/* Importe les styles généraux depuis le fichier style.css */
+@import "./../../style.css";
 
-@import "./../../index.css";
+/* Styles pour le footer */
 footer {
-    display: flex; /* Pour afficher les éléments en ligne */
+    display: flex; /* Affiche les éléments en ligne */
     align-items: center; /* Alignement vertical des éléments au centre */
     justify-content: center; /* Alignement horizontal des éléments au centre */
-    background-color:var(--background-color); /* Couleur de fond du footer */
-    color:var(--primary-color); /* Couleur du texte du footer */
+    background-color: var(--background-color); /* Couleur de fond du footer */
+    color: var(--primary-color); /* Couleur du texte du footer */
     padding: 10px; /* Espacement interne du footer */
     position: fixed; /* Le footer restera en bas de la page */
     left: 0;
     bottom: 0;
     width: 100%; /* Largeur du footer */
-    height: 7%;
+    height: 7%; /* Hauteur du footer */
 }
 
+/* Styles pour les éléments du footer */
 .footer {
-    display: flex; /* Pour afficher les éléments en ligne */
+    display: flex; /* Affiche les éléments en ligne */
     align-items: center; /* Alignement vertical des éléments au centre */
     justify-content: center; /* Alignement horizontal des éléments au centre */
 }
 
+/* Styles pour l'image dans le footer */
 .footer img {
-    height: 50px; /* Hauteur de l'image du footer (ajustez selon vos besoins) */
+    height: 50px; /* Hauteur de l'image du footer */
     margin-right: 10px; /* Espacement à droite de l'image */
 }
 
+/* Styles pour le titre dans le footer */
 .footer h2 {
     font-size: 1.5rem; /* Taille du titre */
 }
-.footer__links{
+
+/* Styles pour les liens dans le footer */
+.footer__links {
     display: flex;
     flex-direction: row;
-    justify-content:center;
-    gap: 20px;
-    width: 100%;
-    list-style: none;
-    text-decoration: none;
-    font-size: 3rem;
-   
+    justify-content: center;
+    gap: 20px; /* Espacement entre les liens */
+    width: 100%; /* Largeur des liens */
+    list-style: none; /* Pas de style de puce pour la liste */
+    text-decoration: none; /* Pas de soulignement pour les liens */
+    font-size: 3rem; /* Taille des icônes de lien */
 }
+
+/* Styles pour chaque lien individuel dans le footer */
 .footer__link {
     display: flex;
-    flex-direction:column;
-}
-.footer__link span{
-    opacity: 0;
-    transition: opacity 0.3s ease; 
-}
-.footer__link:hover span{
-    opacity: 1;
-}
-/* Responsive Styles */
-@media screen and (max-width: 1200px) {
-
-}
-@media screen and (max-width: 768px) {
-  .footer {
     flex-direction: column;
-    flex-wrap: wrap;
- }
- .footer img {
-    height: 25px; /* Hauteur de l'image du footer (ajustez selon vos besoins) */
-    margin-right: 10px; /* Espacement à droite de l'image */
 }
-.footer h2 {
-    font-size: 1rem; /* Taille du titre */
-    
+
+/* Styles pour le texte de chaque lien au survol */
+.footer__link span {
+    opacity: 0; /* Masque le texte par défaut */
+    transition: opacity 0.3s ease; /* Ajoute une transition fluide */
 }
+
+/* Styles pour afficher le texte de chaque lien au survol */
+.footer__link:hover span {
+    opacity: 1; /* Affiche le texte au survol */
+}
+
+/* Styles pour les écrans de taille réduite (responsive) */
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Affiche les éléments en colonne */
+        flex-wrap: wrap; /* Enveloppe les éléments */
+    }
+
+    /* Ajustements pour les images et les titres */
+    .footer img {
+        height: 25px; /* Hauteur de l'image du footer */
+        margin-right: 10px; /* Espacement à droite de l'image */
+    }
+    .footer h2 {
+        font-size: 1rem; /* Taille du titre */
+    }
+
+    /* Masque le texte de chaque lien au survol pour les petits écrans */
+    .footer__link span {
+        display: none;
+    }
 }

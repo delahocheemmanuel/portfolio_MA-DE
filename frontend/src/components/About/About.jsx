@@ -1,7 +1,7 @@
 import React from 'react';
-import './About.css';
-import Footer from '../Footer/Footer';
-import StarRating from '../../utils/StarRating';
+import './About.css'; // Importation du fichier de styles CSS spécifique à About
+import Footer from '../Footer/Footer'; // Importation du composant Footer
+import StarRating from '../../utils/StarRating'; // Importation du composant StarRating pour afficher les étoiles de notation
 import {
   FaReact,
   FaNodeJs,
@@ -11,15 +11,10 @@ import {
   FaFigma,
   FaGithub,
   FaDigitalOcean,
-} from 'react-icons/fa';
-import { SiMongodb, SiRender, SiAdobephotoshop } from 'react-icons/si';
-import { MdPictureAsPdf } from 'react-icons/md';
-import { TbSeo } from 'react-icons/tb';
-
-
-
-
-
+} from 'react-icons/fa'; // Importation des icônes depuis la bibliothèque React Icons
+import { SiMongodb, SiRender, SiAdobephotoshop } from 'react-icons/si'; // Importation d'autres icônes depuis React Icons
+import { MdPictureAsPdf } from 'react-icons/md'; // Importation d'une icône depuis React Icons
+import { TbSeo } from 'react-icons/tb'; // Importation d'une icône personnalisée depuis React Icons
 
 
 const About = () => {
