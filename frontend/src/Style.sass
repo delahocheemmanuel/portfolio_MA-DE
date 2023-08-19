@@ -1,0 +1,49 @@
+/* Réinitialisation de style (reset) */
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, figure, figcaption,
+dl, dd, ol, ul,
+pre,
+hr,
+fieldset, legend
+  margin: 0
+  padding: 0
+
+ul
+  list-style: none
+
+button,
+input,
+select,
+textarea
+  margin: 0
+  padding: 0
+  border: 0
+  background: none
+  font-size: 100%
+  vertical-align: baseline
+
+/* Couleurs */
+$primary-color:#f8fbfd
+$secondary-color: rgb(246, 244, 235)
+$thirdly-color: #065271
+
+/* Styles généraux */
+body
+  max-width: 1920px
+  font-family: "Arial Black", sans-serif 
+  line-height: 1.6
+  box-sizing: border-box
+  background-color:$thirdly-color 
+  color:$secondary-color
+  margin: 0 auto
+
+a
+  text-decoration: none
+  color:$secondary-color
+  &:hover
+    text-decoration: none
+    transform: scale(1.1)
+    color: rgb(224, 21, 21)
+
+/* Ajoutez vos styles spécifiques ci-dessous */

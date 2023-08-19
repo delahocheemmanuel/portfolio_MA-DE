@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; // Importe les styles spécifiques au footer
+import './Footer.sass'; // Importe les styles spécifiques au footer
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Importe le composant FontAwesomeIcon pour les icônes
 import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'; // Importe les icônes de LinkedIn, GitHub et Twitter
 

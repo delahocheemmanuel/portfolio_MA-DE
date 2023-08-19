@@ -33,7 +33,7 @@ const ProjectsData = [
   {
     title: 'Sophie_Bluel', // Titre du projet "Sophie_Bluel"
     imageSrc: sophiebluel, // Image du projet "Sophie_Bluel"
-    description: "J'ai réalisé le backend avec une base de donnée Mongodb, et le modifié le frontend pour que les messages d'erreurs du backend s'affichent sur le site par le frontend.",
+    description: "J'ai réalisé le frontend en html javascript vanilla",
     technologies: ['Javascript', 'API'], // Technologies utilisées dans le projet "Sophie_Bluel"
     
     githubLink: 'https://github.com/delahocheemmanuel/site_projet_3', // Lien vers le repository GitHub du projet "Sophie_Bluel"
@@ -41,8 +41,8 @@ const ProjectsData = [
   {
     title: 'Nina_Carducci', // Titre du projet "Nina_Carducci"
     imageSrc: nina, // Image du projet "Nina_Carducci"
-    description: "J'ai réalisé le backend avec une base de donnée Mongodb, et le modifié le frontend pour que les messages d'erreurs du backend s'affichent sur le site par le frontend.",
-    technologies: ['Javascript', 'API'], // Technologies utilisées dans le projet "Nina_Carducci"
+    description: "j'ai veillé à optimiser les performances, le référencement, la sécurité et l'accessibilité de son site web.En réponse aux demandes spécifiques de la cliente, j'ai également corrigé quelques bugs d'affichage gênants.Pour consigner toutes mes interventions, j'ai rédigé un rapport complet d'optimisation, qui couvre en détail chaque aspect amélioré.",
+    technologies: ['Lighthouse', 'SEO', 'WaveTool'], // Technologies utilisées dans le projet "Nina_Carducci"
     githubLink: 'https://github.com/delahocheemmanuel/site_projet_5', // Lien vers le repository GitHub du projet "Nina_Carducci"
   }
   // Ajoutez un nouveau projet ci-dessous :

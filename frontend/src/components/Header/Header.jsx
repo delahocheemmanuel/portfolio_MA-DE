@@ -1,6 +1,6 @@
 import React from 'react';
 import logo_MADE_w from '../../assets/images/logo/logo MA-DE darkmode.png';
-import './Header.css';
+import './Header.sass';
 
 const Header = () => {
     return (

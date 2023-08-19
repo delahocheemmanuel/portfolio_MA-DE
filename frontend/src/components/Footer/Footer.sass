@@ -1,0 +1,73 @@
+/* Importe les styles généraux depuis le fichier style.css */
+@import "./../../Style.sass"
+
+/* Styles pour le footer */
+footer
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: $thirdly-color
+  color:$primary-color
+  padding: 10px
+  position: fixed
+  left: 0
+  bottom: 0
+  width: 100%
+  height: 7%
+
+/* Styles pour les éléments du footer */
+.footer
+  display: flex
+  align-items: center
+  justify-content: center
+
+/* Styles pour l'image dans le footer */
+.footer img
+  height: 50px
+  margin-right: 10px
+
+/* Styles pour le titre dans le footer */
+.footer h2
+  font-size: 1.5rem
+
+/* Styles pour les liens dans le footer */
+.footer__links
+  display: flex
+  flex-direction: row
+  justify-content: center
+  gap: 20px
+  width: 100%
+  list-style: none
+  text-decoration: none
+  font-size: 3rem
+
+/* Styles pour chaque lien individuel dans le footer */
+.footer__link
+  display: flex
+  flex-direction: column
+
+/* Styles pour le texte de chaque lien au survol */
+.footer__link span
+  opacity: 0
+  transition: opacity 0.3s ease
+
+/* Styles pour afficher le texte de chaque lien au survol */
+.footer__link:hover span
+  opacity: 1
+
+/* Styles pour les écrans de taille réduite (responsive) */
+@media screen and (max-width: 768px)
+  .footer
+    flex-direction: column
+    flex-wrap: wrap
+
+  /* Ajustements pour les images et les titres */
+  .footer img
+    height: 25px
+    margin-right: 10px
+  .footer h2
+    font-size: 1rem
+
+  /* Masque le texte de chaque lien au survol pour les petits écrans */
+  .footer__link span
+    display: none

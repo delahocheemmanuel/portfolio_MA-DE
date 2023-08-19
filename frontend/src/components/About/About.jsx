@@ -1,5 +1,5 @@
 import React from 'react';
-import './About.css'; // Importation du fichier de styles CSS spécifique à About
+import './About.sass'; // Importation du fichier de styles CSS spécifique à About
 import Footer from '../Footer/Footer'; // Importation du composant Footer
 import StarRating from '../../utils/StarRating'; // Importation du composant StarRating pour afficher les étoiles de notation
 import {
@@ -32,7 +32,7 @@ const About = () => {
             <section className="section__objectif">
     <h2>Objectif professionnel</h2>
     <p>
-        Je suis à la recherche d'opportunités en tant que développeur web junior, avec une préférence pour des postes en CDI ou CDD à 90 %, offrant la possibilité de télétravail. Ma passion pour la programmation et ma solide expérience dans la création d'applications web me permettent de contribuer de manière significative à des projets innovants et stimulants. En parallèle, je souhaite également explorer le domaine du freelance pour élargir mes compétences et collaborer avec une variété de clients et de projets. Mon objectif est de continuer à apprendre, à développer mes compétences et à apporter une valeur ajoutée à chaque opportunité professionnelle.
+        Je suis à la recherche d'opportunités en tant que développeur web junior, avec une préférence pour des postes en CDI ou CDD à 90 % en télétravail. Ma passion pour la programmation et ma solide expérience dans la création d'applications web me permettent de contribuer de manière significative à des projets innovants et stimulants. En parallèle, je souhaite également explorer le domaine du freelance pour élargir mes compétences et collaborer avec une variété de clients et de projets. Mon objectif est de continuer à apprendre, à développer mes compétences et à apporter une valeur ajoutée à chaque opportunité professionnelle.
     </p>
 </section>
 

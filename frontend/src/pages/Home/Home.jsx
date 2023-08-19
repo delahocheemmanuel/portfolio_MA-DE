@@ -31,22 +31,33 @@ const Home = () => {
                     <Slider {...settings}>
                         {ProjectsData.map((project, index) => (
                             <div key={index} className="project-slide">
-                                <Link
-                                    to={project.githubPagesLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className='project__link'
-                                >
-                                    <img
-                                        className="project__img"
-                                        src={project.imageSrc}
-                                        alt={project.title} // Texte alternatif pour l'image
-                                    />
-                                </Link>
+                                {project.githubPagesLink ? (
+                                    <Link
+                                        to={project.githubPagesLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="project__link"
+                                    >
+                                        <img
+                                            className="project__img"
+                                            src={project.imageSrc}
+                                            alt={project.title}
+                                        />
+                                    </Link>
+                                ) : (
+                                    <div className="project__link">
+                                        <img
+                                            className="project__img"
+                                            src={project.imageSrc}
+                                            alt={project.title}
+                                        />
+                                    </div>
+                                )}
+
                                 <div className="realisations__project--desc">
-                                    
-                                    <ul className='description' >
-                                        {project.description} {/* Rendu de la description du projet */}
+                                    <ul className="description">
+                                        {project.description}{' '}
+                                        {/* Rendu de la description du projet */}
                                     </ul>
                                     <Link
                                         to={project.githubLink}
@@ -55,18 +66,18 @@ const Home = () => {
                                     >
                                         lien GitHub
                                     </Link>
-                                    <ul className='technologie'>
+                                    <ul className="technologie">
                                         {project.technologies.map(
                                             (tech, techIndex) => (
                                                 <li key={techIndex}>{tech}</li>
                                             )
                                         )}
                                     </ul>
-                                    
                                 </div>
                             </div>
                         ))}
-                    </Slider> {/* Rendu du composant Slider avec les projets */}
+                    </Slider>{' '}
+                    {/* Rendu du composant Slider avec les projets */}
                 </section>
                 <section className="home__presentation--contact" id="Contact">
                     <h2>Contact:</h2>

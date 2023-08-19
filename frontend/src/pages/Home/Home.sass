@@ -1,5 +1,5 @@
 // Importez votre fichier de styles principal
-@import "./../../style.css"
+@import "./../../Style.sass"
 
 // Styles pour la section principale
 .home-container
@@ -10,6 +10,8 @@
   margin: auto
   padding-top: 150px
   margin-bottom: 300px
+  h2
+    text-decoration: underline
 
 // Styles pour chaque diapositive de projet
 .project-slide
@@ -25,20 +27,19 @@
     border: none
 
 // Styles pour les titres "Real" et "Contact"
-#Real, #Contact h2
+#Real h2, #Contact h2
   font-size: 2rem
   margin: 10px 0
-  color: var(--primary-color)
+  color:$primary-color
   padding-top: 30px
-
-#Contact h2
   margin-top: 250px
+
 
 // Styles pour les flèches de navigation du carousel
 .slick-prev:before, .slick-next:before
   font-family: 'slick'
   font-size: 50px
-  color: var(--primary-color)
+  color:$primary-color
 
 // Styles pour les images des diapositives
 .slick-slide img
@@ -83,15 +84,15 @@
 
 // Styles pour les points de pagination du carousel
 .slick-active
-  color: var(--primary-color)
+  color:$primary-color
 
 .slick-dots li button:before
   font-size: 20px
-  color: var(--secondary-color)
+  color:$secondary-color
 
 .slick-dots li.slick-active button:before
   opacity: 1
-  color: var(--primary-color)
+  color:$primary-color
 
 // Styles pour les listes et les éléments de liste
 ul
