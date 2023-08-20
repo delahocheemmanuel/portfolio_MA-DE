@@ -54,7 +54,12 @@ const Home = () => {
                                     </div>
                                 )}
 
+
                                 <div className="realisations__project--desc">
+                                    <ul className='difficulty' >
+                                        {project.difficultés}{' '}
+                                        {/* Rendu de la difficulté du projet */}
+                                    </ul>
                                     <ul className="description">
                                         {project.description}{' '}
                                         {/* Rendu de la description du projet */}
