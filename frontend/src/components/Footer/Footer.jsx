@@ -15,7 +15,7 @@ const Footer = () => {
             className="footer__link" // Classe pour le style du lien
           >
             <FontAwesomeIcon icon={faLinkedin} /> {/* Affiche l'icône LinkedIn */}
-            <span>LinkedIn</span> {/* Texte du lien */}
+            
           </a>
           <a
             href="https://github.com/delahocheemmanuel" // Lien vers le profil GitHub
@@ -24,7 +24,7 @@ const Footer = () => {
             className="footer__link" // Classe pour le style du lien
           >
             <FontAwesomeIcon icon={faGithub} /> {/* Affiche l'icône GitHub */}
-            <span>GitHub</span> {/* Texte du lien */}
+            
           </a>
           <a
             href="https://twitter.com/DelahocheManu" // Lien vers le profil Twitter
@@ -33,7 +33,7 @@ const Footer = () => {
             className="footer__link" // Classe pour le style du lien
           >
             <FontAwesomeIcon icon={faTwitter} /> {/* Affiche l'icône Twitter */}
-            <span>Twitter</span> {/* Texte du lien */}
+            
           </a>
         </div>
       </div>
