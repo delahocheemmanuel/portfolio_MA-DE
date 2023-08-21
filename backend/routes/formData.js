@@ -6,7 +6,7 @@ const limiter = require("../middleware/rate-limit"); // Middleware pour limiter 
 
 
 // Route pour enregistrer les données dans la base de données
-router.post("/",limiter , FormDataController.saveFormData);
+router.post("/", FormDataController.saveFormData);
 
 
 module.exports = router;
