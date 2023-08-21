@@ -76,7 +76,7 @@ const Contact = () => {
         }
         setTimeout(() => {
             setIsSubmitting(false); // Fin de la soumission après un délai (timeout)
-        }, 5000); // Temps en millisecondes (ici, 5 secondes)
+        }, 1000); // Temps en millisecondes (ici, 5 secondes)
     };
     // Rendu du composant
     return (

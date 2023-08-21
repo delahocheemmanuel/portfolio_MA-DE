@@ -205,7 +205,7 @@ const About = () => {
                     <h2>Centres d'intérêt</h2>
                     <ul>
                         <li>Bricolage</li>
-                        <li>jardinage</li>
+                        <li>Jardinage</li>
                         <li>Montages vidéos</li>
                         {/* Ajoutez d'autres centres d'intérêt ici */}
                     </ul>
